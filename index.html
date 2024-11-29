@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David SMP</title>
+    <link rel="icon" type="image/x-icon" href="logos/minecraft-icon.png">
+    <style>
+        /* Grundlegende Stile */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: #fff;
+            line-height: 1.6;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: transform 0.3s ease-in-out, background 0.3s ease;
+        }
+
+        header.hidden {
+            transform: translateY(-100%);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .header-placeholder {
+            height: 120px;
+        }
+
+        /* Sektionen */
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4caf50;
+            text-align: center;
+        }
+
+        /* Boxen */
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .box {
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 280px;
+            height: 180px;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(51, 51, 51, 0.8);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Individuelle Box-Hintergründe */
+        .box-server {
+            background-image: url('logos/server-bg.jpg');
+        }
+
+        .box-rules {
+            background-image: url('logos/rules-bg.jpg');
+        }
+
+        .box-community {
+            background-image: url('logos/community-bg.jpg');
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        footer a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Willkommen beim David SMP</h1>
+    </header>
+    <div class="header-placeholder"></div>
+
+    <!-- Startseite -->
+    <section>
+        <h2 class="section-title">Über den Server</h2>
+        <div class="box-container">
+            <div class="box box-server">
+                <h3>Server-Details</h3>
+                <p>IP: DavidSMP.de<br>Version: 1.21+</p>
+            </div>
+            <div class="box box-rules">
+                <h3>Regeln</h3>
+                <p>Fairness, kein Griefing, Spaß haben!</p>
+            </div>
+            <div class="box box-community">
+                <h3>Community</h3>
+                <p>Ein Zuhause für kreative Köpfe und Abenteurer.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Kontakt</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>Discord</h3>
+                <p><a href="https://discord.gg/eX2242Qr" target="_blank">David SMP Discord</a></p>
+            </div>
+            <div class="box">
+                <h3>E-Mail</h3>
+                <p>keine vorhanden :O</p>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"siqbda2ed95fcdf2371de60fa3968f3d220ef2a6a2354027b1a141ce8eea413b483", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.eu/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");</script>
+
+    <footer>
+        <p>&copy; 2024 jojosstudio. <a href="agb.html">Datenschutz</a>
+    </footer>
+</body>
+</html>
